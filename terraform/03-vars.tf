@@ -1,8 +1,8 @@
 variable "replicas" {
-  type = number
+  type    = number
   default = 1
 }
 variable "service_version" {
-  type = string
+  type    = string
   default = "latest"
 }

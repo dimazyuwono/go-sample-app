@@ -1,6 +1,6 @@
 FROM golang:alpine AS build
 WORKDIR /tmp/workdir
-COPY *.go
+COPY *.go .
 RUN go build -o ./out/go-sample-app .
 
 FROM alpine:3.7

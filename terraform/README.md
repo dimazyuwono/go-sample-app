@@ -27,6 +27,15 @@ The directory is populated with terraform codes. It is using Terraform 0.12 conv
 |------|-------------|
 | lb_ip | The public IP of the `Service`'s LoadBalancer resource. |
 
+### How-to execute
+```
+terraform init
+terraform apply ( uses default values )
+OR
+terraform init
+terraform apply -var replicas=[number of replica] -var service_verson=[container image tag]
+```
+
 ### References
 - [Terraform - Kubernetes Provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/guides/getting-started#provider-setup)
 - [Terraform - Kubernetes Deployment](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)
